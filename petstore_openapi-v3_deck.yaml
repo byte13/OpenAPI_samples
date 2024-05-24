@@ -1,0 +1,182 @@
+_format_version: "3.0"
+services:
+- host: localhost
+  name: Swagger_Petstore_-_OpenAPI_3_0
+  path: /api/v3
+  plugins: []
+  port: 443
+  protocol: https
+  routes:
+  - methods:
+    - POST
+    name: Swagger_Petstore_-_OpenAPI_3_0-addPet
+    paths:
+    - ~/pet$
+    plugins: []
+    regex_priority: 200
+    strip_path: false
+    tags: []
+  - methods:
+    - PUT
+    name: Swagger_Petstore_-_OpenAPI_3_0-updatePet
+    paths:
+    - ~/pet$
+    plugins: []
+    regex_priority: 200
+    strip_path: false
+    tags: []
+  - methods:
+    - GET
+    name: Swagger_Petstore_-_OpenAPI_3_0-findPetsByStatus
+    paths:
+    - ~/pet/findByStatus$
+    plugins: []
+    regex_priority: 200
+    strip_path: false
+    tags: []
+  - methods:
+    - GET
+    name: Swagger_Petstore_-_OpenAPI_3_0-findPetsByTags
+    paths:
+    - ~/pet/findByTags$
+    plugins: []
+    regex_priority: 200
+    strip_path: false
+    tags: []
+  - methods:
+    - DELETE
+    name: Swagger_Petstore_-_OpenAPI_3_0-deletePet
+    paths:
+    - ~/pet/(?<petId>[^#?/]+)$
+    plugins: []
+    regex_priority: 100
+    strip_path: false
+    tags: []
+  - methods:
+    - GET
+    name: Swagger_Petstore_-_OpenAPI_3_0-getPetById
+    paths:
+    - ~/pet/(?<petId>[^#?/]+)$
+    plugins: []
+    regex_priority: 100
+    strip_path: false
+    tags: []
+  - methods:
+    - POST
+    name: Swagger_Petstore_-_OpenAPI_3_0-updatePetWithForm
+    paths:
+    - ~/pet/(?<petId>[^#?/]+)$
+    plugins: []
+    regex_priority: 100
+    strip_path: false
+    tags: []
+  - methods:
+    - POST
+    name: Swagger_Petstore_-_OpenAPI_3_0-uploadFile
+    paths:
+    - ~/pet/(?<petId>[^#?/]+)/uploadImage$
+    plugins: []
+    regex_priority: 100
+    strip_path: false
+    tags: []
+  - methods:
+    - GET
+    name: Swagger_Petstore_-_OpenAPI_3_0-getInventory
+    paths:
+    - ~/store/inventory$
+    plugins: []
+    regex_priority: 200
+    strip_path: false
+    tags: []
+  - methods:
+    - POST
+    name: Swagger_Petstore_-_OpenAPI_3_0-placeOrder
+    paths:
+    - ~/store/order$
+    plugins: []
+    regex_priority: 200
+    strip_path: false
+    tags: []
+  - methods:
+    - DELETE
+    name: Swagger_Petstore_-_OpenAPI_3_0-deleteOrder
+    paths:
+    - ~/store/order/(?<orderId>[^#?/]+)$
+    plugins: []
+    regex_priority: 100
+    strip_path: false
+    tags: []
+  - methods:
+    - GET
+    name: Swagger_Petstore_-_OpenAPI_3_0-getOrderById
+    paths:
+    - ~/store/order/(?<orderId>[^#?/]+)$
+    plugins: []
+    regex_priority: 100
+    strip_path: false
+    tags: []
+  - methods:
+    - POST
+    name: Swagger_Petstore_-_OpenAPI_3_0-createUser
+    paths:
+    - ~/user$
+    plugins: []
+    regex_priority: 200
+    strip_path: false
+    tags: []
+  - methods:
+    - POST
+    name: Swagger_Petstore_-_OpenAPI_3_0-createUsersWithListInput
+    paths:
+    - ~/user/createWithList$
+    plugins: []
+    regex_priority: 200
+    strip_path: false
+    tags: []
+  - methods:
+    - GET
+    name: Swagger_Petstore_-_OpenAPI_3_0-loginUser
+    paths:
+    - ~/user/login$
+    plugins: []
+    regex_priority: 200
+    strip_path: false
+    tags: []
+  - methods:
+    - GET
+    name: Swagger_Petstore_-_OpenAPI_3_0-logoutUser
+    paths:
+    - ~/user/logout$
+    plugins: []
+    regex_priority: 200
+    strip_path: false
+    tags: []
+  - methods:
+    - DELETE
+    name: Swagger_Petstore_-_OpenAPI_3_0-deleteUser
+    paths:
+    - ~/user/(?<username>[^#?/]+)$
+    plugins: []
+    regex_priority: 100
+    strip_path: false
+    tags: []
+  - methods:
+    - GET
+    name: Swagger_Petstore_-_OpenAPI_3_0-getUserByName
+    paths:
+    - ~/user/(?<username>[^#?/]+)$
+    plugins: []
+    regex_priority: 100
+    strip_path: false
+    tags: []
+  - methods:
+    - PUT
+    name: Swagger_Petstore_-_OpenAPI_3_0-updateUser
+    paths:
+    - ~/user/(?<username>[^#?/]+)$
+    plugins: []
+    regex_priority: 100
+    strip_path: false
+    tags: []
+  tags: []
+upstreams: []
